@@ -1,7 +1,7 @@
 import openai
 
-client = openai.OpenAI(api_key="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")  # ваш ключ
 
+client = openai.OpenAI(api_key="")
 def translate_srt_to_russian(srt_text):
     system_prompt = (
         "Ты профессиональный переводчик. Переведи следующий файл субтитров с китайского языка на русский язык, "
