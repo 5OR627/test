@@ -13,8 +13,8 @@ import requests
 #
 # print(response.text)
 
-BOT_TOKEN = '7339245446:AAFSjoEhDrnqlFuVGoxWcYykykqJ4qRjPso'
-FILE_ID = 'BAACAgIAAxkBAAICxmgMgZmGHywVeirrN77IVM66b593AAJMaQACq9hoSOncaiHwtPotNgQ'
+BOT_TOKEN = ''
+FILE_ID = ''
 
 # Step 1: Get the file path
 get_file_url = f'https://api.telegram.org/bot{BOT_TOKEN}/getFile?file_id={FILE_ID}'
