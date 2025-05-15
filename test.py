@@ -1,5 +1,5 @@
 import requests
-
+import os
 # url = "https://api.telegram.org/bot7339245446:AAFSjoEhDrnqlFuVGoxWcYykykqJ4qRjPso/setWebhook?remove="
 #
 # payload = { "url": "" }
@@ -13,8 +13,9 @@ import requests
 #
 # print(response.text)
 
-BOT_TOKEN = ''
-FILE_ID = ''
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+FILE_ID = os.getenv('FILE_ID')
+
 
 # Step 1: Get the file path
 get_file_url = f'https://api.telegram.org/bot{BOT_TOKEN}/getFile?file_id={FILE_ID}'

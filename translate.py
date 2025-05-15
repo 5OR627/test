@@ -1,7 +1,9 @@
 import openai
+import os
 
+API_KEY = os.getenv('API_KEY')
 
-client = openai.OpenAI(api_key="")
+client = openai.OpenAI(api_key=API_KEY)
 def translate_srt_to_russian(srt_text):
     system_prompt = (
         "Ты профессиональный переводчик. Переведи следующий файл субтитров с китайского языка на русский язык, "

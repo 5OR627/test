@@ -1,6 +1,9 @@
 import openai
+import os
 
-client = openai.OpenAI(api_key = '')
+API_KEY = os.getenv('API_KEY')
+
+client = openai.OpenAI(api_key = API_KEY)
 
 def transcribe_audio(audio_path):
     with open(audio_path, "rb") as audio_file:
